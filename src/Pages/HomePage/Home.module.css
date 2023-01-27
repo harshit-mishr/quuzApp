@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap")
+  repeat scroll 0 0 rgba(0, 0, 0, 0);
+body {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    animation: scroll 70s linear infinite;
+    background: url("https://wallpapercave.com/wp/wp2570986.jpg"), #111111;
+    color: rgb(238, 239, 255);
+    height: 100vh;
+    min-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main{
+    text-align: center;
+    font-size: xx-large;
+    font-family: cursive;
+    text-shadow: 5px 5px 2px rgb(0, 0, 0);
+  }
+
+  .select{
+    font-size: xx-large;
+    font-family: cursive;
+    text-shadow: 2px 2px black;
+    text-align: center;
+  }
+  .select select{
+    width: 23rem;
+    height: 3rem;
+    border-radius: 2rem;
+    font-size: xx-large;
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+  }
+  .btn{
+    height: 4rem;
+    width: 22rem;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    border-radius: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .btn:hover{
+    background-color: cornflowerblue;
+    color: white;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+  }
+
+  .arrow{
+    font-size: 3rem;
+  }
+
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 200s linear infinite;
+  }
+}
